@@ -1,4 +1,4 @@
-# React Redux Starter Kit
+# React Redux WebdriverIO Starter Kit
 
 [![Join the chat at https://gitter.im/davezuko/react-redux-starter-kit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/davezuko/react-redux-starter-kit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/davezuko/react-redux-starter-kit.svg?branch=master)](https://travis-ci.org/davezuko/react-redux-starter-kit?branch=master)
@@ -49,14 +49,14 @@ Finally, This project wouldn't be possible without the help of our many contribu
 
 ## Getting Started
 
-After confirming that your development environment meets the specified [requirements](#requirements), you can create a new project based on `react-redux-starter-kit` in one of two ways:
+After confirming that your development environment meets the specified [requirements](#requirements), you can create a new project based on `react-redux-webdriverIO-starter-kit` in one of two ways:
 
 ### Install from source
 
 First, clone the project:
 
 ```bash
-$ git clone https://github.com/davezuko/react-redux-starter-kit.git <my-project-name>
+$ git clone <link-to-my-project>
 $ cd <my-project-name>
 ```
 
@@ -87,7 +87,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 
 ## Application Structure
 
-The application structure presented in this boilerplate is **fractal**, where functionality is grouped primarily by feature rather than file type. Please note, however, that this structure is only meant to serve as a guide, it is by no means prescriptive. That said, it aims to represent generally accepted guidelines and patterns for building scalable applications. If you wish to read more about this pattern, please check out this [awesome writeup](https://github.com/davezuko/react-redux-starter-kit/wiki/Fractal-Project-Structure) by [Justin Greenberg](https://github.com/justingreenberg).
+The application structure presented in this boilerplate is **fractal**, where functionality is grouped primarily by feature rather than file type. Please note, however, that this structure is only meant to serve as a guide, it is by no means prescriptive. That said, it aims to represent generally accepted guidelines and patterns for building scalable applications.
 
 ```
 .
@@ -152,7 +152,7 @@ To add a unit test, simply create a `.spec.js` file anywhere in `~/tests/unit`. 
 ## End2End (UI) Testing
 After npm install, run `npm run e2e-setup` in order to install the required selenium servers and drivers.
 Then `npm run selenium-server` in a separate terminal to start a selenium standalone server.
-To run the e2e test suites, run `npm run e2e`
+To run the e2e test suites, run `npm run e2e`.
 In order to add an end2end test, create a `.spec.js` file in `~/tests/e2e/specs/`.
 
 ## Deployment
@@ -211,22 +211,3 @@ This starter kit comes packaged with an Express server. It's important to note t
 ### Production Optimization
 
 Babel is configured to use [babel-plugin-transform-runtime](https://www.npmjs.com/package/babel-plugin-transform-runtime) so transforms aren't inlined. In production, webpack will extract styles to a `.css` file, minify your JavaScript, and perform additional optimizations such as module deduplication.
-
-## Learning Resources
-
-* [Starting out with react-redux-starter-kit](https://suspicious.website/2016/04/29/starting-out-with-react-redux-starter-kit/) is an introduction to the components used in this starter kit with a small example in the end.
-
-## FAQ
-
-Having trouble? Check out our [FAQ](https://github.com/davezuko/react-redux-starter-kit/wiki/FAQ:-Frequently-Asked-Questions) or submit an issue. Please be considerate by only posting issues that are directly related to this project; questions about how to implement certain React or Redux features are both best suited for StackOverflow or their respective repositories.
-
-## Thank You
-
-This project wouldn't be possible without help from the community, so I'd like to highlight some of its biggest contributors. Thank you all for your hard work, you've made my life a lot easier and taught me a lot in the process.
-
-* [Justin Greenberg](https://github.com/justingreenberg) - For all of your PR's, getting us to Babel 6, and constant work improving our patterns.
-* [Roman Pearah](https://github.com/neverfox) - For your bug reports, help in triaging issues, and PR contributions.
-* [Spencer Dixon](https://github.com/SpencerCDixon) - For your creation of [redux-cli](https://github.com/SpencerCDixon/redux-cli).
-* [Jonas Matser](https://github.com/mtsr) - For your help in triaging issues and unending support in our Gitter channel.
-
-And to everyone else who has contributed, even if you are not listed here your work is appreciated.
