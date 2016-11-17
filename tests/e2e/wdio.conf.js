@@ -11,11 +11,11 @@ exports.config = {
      * specify test files
      */
     specs: [
-        './test/e2e/specs/*.spec.js'
+        './tests/e2e/specs/*.spec.js'
     ],
     exclude: [
-        'test/spec/multibrowser/**',
-        'test/spec/mobile/**'
+        'tests/e2e/specs/multibrowser/**',
+        'tests/e2e/specs/mobile/**'
     ],
 
     /**
@@ -31,7 +31,7 @@ exports.config = {
     logLevel: 'silent',
     sync: true,
     coloredLogs: true,
-    screenshotPath: './test/e2e/screenshots',
+    screenshotPath: './tests/e2e/screenshots',
     baseUrl: 'http://localhost:3000',
     waitforTimeout: 10000,
     framework: 'jasmine',

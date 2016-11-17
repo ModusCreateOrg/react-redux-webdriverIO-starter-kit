@@ -21,7 +21,7 @@
     "deploy:prod": "better-npm-run deploy:prod",
     "codecov": "cat coverage/*/lcov.info | codecov",
     "e2e-setup": "node_modules/selenium-standalone/bin/selenium-standalone install",
-    "e2e": "node_modules/.bin/wdio test/e2e/wdio.conf.js",
+    "e2e": "node_modules/.bin/wdio tests/e2e/wdio.conf.js",
     "selenium-server": "node_modules/selenium-standalone/bin/selenium-standalone start"
   },
   "betterScripts": {
