@@ -31,7 +31,7 @@ exports.config = {
     logLevel: 'silent',
     sync: true,
     coloredLogs: true,
-    screenshotPath: './tests/screenshots',
+    screenshotPath: './test/e2e/screenshots',
     baseUrl: 'http://localhost:3000',
     waitforTimeout: 10000,
     framework: 'jasmine',
