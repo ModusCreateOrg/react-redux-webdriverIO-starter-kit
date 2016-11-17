@@ -19,7 +19,10 @@
     "deploy": "better-npm-run deploy",
     "deploy:dev": "better-npm-run deploy:dev",
     "deploy:prod": "better-npm-run deploy:prod",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "codecov": "cat coverage/*/lcov.info | codecov",
+    "e2e-setup": "node_modules/selenium-standalone/bin/selenium-standalone install",
+    "e2e": "node_modules/.bin/wdio test/e2e/wdio.conf.js",
+    "selenium-server": "node_modules/selenium-standalone/bin/selenium-standalone start"
   },
   "betterScripts": {
     "compile": {
@@ -130,6 +133,7 @@
     "eslint-plugin-react": "^6.0.0",
     "eslint-plugin-standard": "^2.0.0",
     "express": "^4.14.0",
+    "jasmine": "^2.5.2",
     "karma": "^1.0.0",
     "karma-coverage": "^1.0.0",
     "karma-mocha": "^1.0.1",
@@ -141,8 +145,12 @@
     "phantomjs-prebuilt": "^2.1.12",
     "react-addons-test-utils": "^15.0.0",
     "redbox-react": "^1.2.10",
+    "selenium-standalone": "^5.8.0",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",
+    "wdio-jasmine-framework": "^0.2.16",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "^4.4.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.2"
   }
